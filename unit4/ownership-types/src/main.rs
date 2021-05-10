@@ -48,7 +48,7 @@ fn main() {
 
     // If .clone() needs to be called, why is this valid?
     // This is NOT because integers are "primitives" or something
-    // Rust gives the "Copy" trait to types that have a known type at compile time
+    // Rust gives the "Copy" trait to types that have a known size at compile time
     // This designates that .clone() would have no impact, and that variables don't get invalidated.
     // Types that have "Copy" include ints, bools, chars, floats, and tuples that contain such types
 }

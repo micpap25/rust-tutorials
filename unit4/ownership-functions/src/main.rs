@@ -1,14 +1,14 @@
 fn main() {
-    let s = String::from("hello");  
+    let s = String::from("hello");
     // s comes into scope
 
-    takes_ownership(s);             
+    takes_ownership(s);
     // s's value moves into the function, and so is no longer valid here
 
     let x = 5;
     // x comes into scope
 
-    makes_copy(x);                  
+    makes_copy(x)
     // x would move into the function,
     // but i32 is Copy, so it’s okay to still
     // use x afterward
@@ -19,7 +19,7 @@ fn main() {
     let s2 = String::from("hello");
     // s2 comes into scope
 
-    let _s3 = takes_and_gives_back(s2);  
+    let _s3 = takes_and_gives_back(s2);
     // s2 is moved into takes_and_gives_back, which also moves its return value into s3
 
     let s4 = String::from("hello");
