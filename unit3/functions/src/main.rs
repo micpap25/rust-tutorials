@@ -9,7 +9,7 @@ fn main() {
     println!("The value of a is: {}", a);
 }
 
-fn another_function(x: i32, y:i32) {
+fn another_function(x: i32, y: i32) {
     // functions are defined with fn
     // functions can be given parameters as such
 
@@ -19,10 +19,10 @@ fn another_function(x: i32, y:i32) {
 
 // you can define functions anywhere, before or after main
 
-// Function bodies are made up of a series of statements optionally ending in an expression. 
-// Because Rust is an expression-based language, this is an important distinction to understand. 
+// Function bodies are made up of a series of statements optionally ending in an expression.
+// Because Rust is an expression-based language, this is an important distinction to understand.
 
-// Statements are instructions that perform some action and do not return a value. 
+// Statements are instructions that perform some action and do not return a value.
 // Expressions evaluate to a resulting value. Let’s look at some examples.
 
 // Statements don't return values, so you can't do something like this

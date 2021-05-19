@@ -1,5 +1,5 @@
 [package]
-name = "ownership-types"
+name = "defining-structs"
 version = "0.1.0"
 authors = ["micpap25 <micpap25@gmail.com>"]
 edition = "2018"

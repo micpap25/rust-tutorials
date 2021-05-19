@@ -38,7 +38,6 @@ fn main() {
     s2.clear();
 
     // Slices are also nice because they warn us compile-time that a value was cleared, instead of run-time.
-    
     // Now, we can understand string literals
     let _literal = "Hello, world!";
     // This is an immutable &str which references a specific point in memory.
@@ -60,7 +59,7 @@ fn main() {
 
     println!("{}", word);
 
-    // And of course, we can slice other types too. 
+    // And of course, we can slice other types too.
     // this example has type &[i32]
     let a = [1, 2, 3, 4, 5];
 
@@ -71,7 +70,7 @@ fn main() {
 
 fn first_word_usize(s: &String) -> usize {
     // To go through each byte of the string, we will use .as_bytes() to make it a byte array
-    // Remember that bytes are u8's. 
+    // Remember that bytes are u8's.
     let bytes = s.as_bytes();
 
     // .iter() returns an iterator; for this purpose, equivalent to returning each element of the array in a way that can be altered.

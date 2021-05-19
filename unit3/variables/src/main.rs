@@ -33,5 +33,4 @@ fn main() {
     let spaces = "   ";
     let spaces = spaces.len();
     println!("The number of spaces is: {}", spaces);
-    
 }

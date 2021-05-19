@@ -3,14 +3,12 @@ fn main() {
 
     if number < 5 {
         println!("The condition was true");
-    }
-    else {
+    } else {
         println!("The condition was false");
     }
-    
     // This is how you do conditionals
     // conditionals "branch" into "arms" of code
-    // The if conditional MUST be a bool. 
+    // The if conditional MUST be a bool.
 
     if number != 0 {
         println!("The number was something other than 0");
@@ -26,7 +24,7 @@ fn main() {
         println!("number is not divisible by 4, 3, or 2");
     }
 
-    let x = if number > 3 { 10} else {2};
+    let x = if number > 3 { 10 } else { 2 };
 
     println!("The value of x is: {}", x);
 
@@ -85,7 +83,7 @@ fn main() {
 
     // loop through a collection with a for loop
     // .iter() returns an iterator for the collection
-    // remember that . allows you to access properties of a varaible, 
+    // remember that . allows you to access properties of a varaible,
     // different from :: which lets you access parts of a package
 
     for number in (1..4).rev() {

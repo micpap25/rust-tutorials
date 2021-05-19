@@ -7,7 +7,7 @@ fn main() {
 
     println!("The length of '{}' is {}.", s1, len);
 
-    // References let you refer to objects without affecting their ownership. 
+    // References let you refer to objects without affecting their ownership.
     // The reference character is &, the dereference character is *
 
     // Passing a reference is referred to as borrowing.
@@ -41,7 +41,7 @@ fn main() {
 
     let _r4 = &mut s4;
 
-    // You can't make a mutable when you already have a mutable, for the above reasons. 
+    // You can't make a mutable when you already have a mutable, for the above reasons.
     // You can't make an immutable when you have a mutable, because the value changing is a problem.
     // You can have any number of immutables.
 
@@ -54,7 +54,6 @@ fn main() {
 
     // The below is fine, though, because the object's scope ends at its last usage.
 
-    
     let r8 = &s5;
     let r9 = &s5;
     println!("{} and {}", r8, r9);
@@ -67,7 +66,6 @@ fn main() {
     let reference = dangle();
 
     println!("{}", reference);
-
 }
 
 fn calculate_length(s: &String) -> usize {
@@ -90,11 +88,11 @@ fn mut_change(some_string: &mut String) {
 // dangle returns a reference to a String
 //     let s = String::from("hello"); // s is a new String
 //     &s // we return a reference to the String, s
-// } 
+// }
 // Here, s goes out of scope, and is dropped. Its memory goes away.
 // Danger!
 
 fn dangle() -> String {
-    let s = String::from("hello"); 
+    let s = String::from("hello");
     s
-} 
+}
